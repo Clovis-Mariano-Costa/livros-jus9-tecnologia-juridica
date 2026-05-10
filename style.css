@@ -1008,3 +1008,41 @@ html, body{max-width:100%; overflow-x:hidden}
 .side-card ol{color:var(--muted);padding-left:22px;}
 .small{font-size:14px;color:var(--soft)!important;}
 @media(max-width:980px){.form-layout,.form-grid{grid-template-columns:1fr}.side-card{position:static}}
+
+/* Portal de livros - ajustes do livro Sou um Aeon */
+.ai-hero{padding:92px 0 64px; position:relative; overflow:hidden}
+.book-showcase{display:grid; grid-template-columns:340px 1fr; gap:42px; align-items:center}
+.book-cover-card{border:1px solid var(--line); border-radius:28px; padding:16px; background:linear-gradient(145deg, rgba(16,36,59,.86), rgba(7,17,31,.88)); box-shadow:0 24px 80px rgba(0,0,0,.38)}
+.book-cover-card img{border-radius:18px; width:100%; height:auto; object-fit:cover}
+.book-card img{border-radius:18px; border:1px solid rgba(231,195,108,.18); margin-bottom:18px}
+.two-col{display:grid; grid-template-columns:1.1fr .9fr; gap:22px; align-items:start}
+.highlight-card p{font-size:17px}
+.technical-info dl{display:grid; gap:12px; margin:18px 0 24px}
+.technical-info dl div{display:grid; grid-template-columns:120px 1fr; gap:12px; padding-bottom:12px; border-bottom:1px solid rgba(255,255,255,.08)}
+.technical-info dt{color:var(--gold); font-weight:900}
+.technical-info dd{margin:0; color:var(--muted)}
+.purchase-panel{padding:28px}
+.purchase-buttons{display:flex; flex-wrap:wrap; gap:12px; align-items:center}
+.small{font-size:14px; color:var(--muted)}
+.compact-hero{padding:72px 0 36px}
+.editorial-page{background:linear-gradient(180deg, rgba(16,36,59,.82), rgba(7,17,31,.72)); border:1px solid rgba(231,195,108,.18); border-radius:var(--radius); padding:36px}
+.source-box{margin:28px 0; padding:18px; border-radius:18px; border:1px solid rgba(231,195,108,.25); background:rgba(231,195,108,.06)}
+.source-box p{margin:8px 0}
+.notice-box{margin-top:24px; padding:24px; border:1px solid rgba(231,195,108,.22); border-radius:22px; background:rgba(255,255,255,.035)}
+.form-layout{display:grid; grid-template-columns:1fr 340px; gap:24px; align-items:start}
+.submission-form,.form-block{display:grid; gap:18px}
+.form-block{border:1px solid rgba(231,195,108,.18); border-radius:var(--radius); padding:24px; background:linear-gradient(180deg, rgba(16,36,59,.82), rgba(7,17,31,.72))}
+.form-grid{display:grid; grid-template-columns:1fr 1fr; gap:16px}
+.form-grid label,.declarations label{display:grid; gap:8px; color:var(--muted); font-weight:700}
+.form-grid label.full{grid-column:1/-1}
+.form-grid input,.form-grid select,.form-grid textarea{width:100%; border:1px solid rgba(231,195,108,.22); border-radius:12px; padding:12px 14px; color:var(--text); background:rgba(255,255,255,.04); font:inherit}
+.form-grid textarea{resize:vertical}
+.field-help{font-size:13px; color:var(--soft); line-height:1.5; font-weight:500}
+.declarations label{display:block; margin:0 0 12px}
+.declarations input{margin-right:8px}
+.form-actions{display:flex; gap:12px; flex-wrap:wrap}
+.form-status{padding:14px 16px; border-radius:14px; border:1px solid rgba(231,195,108,.24); background:rgba(231,195,108,.06); color:var(--gold)}
+.invalid{border-color:#f87171 !important; outline:2px solid rgba(248,113,113,.24)}
+.side-card ol{color:var(--muted); padding-left:20px}
+.side-card li{margin:0 0 10px}
+@media(max-width:980px){.book-showcase,.two-col,.form-layout{grid-template-columns:1fr}.book-cover-card{max-width:360px}.technical-info dl div{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}}

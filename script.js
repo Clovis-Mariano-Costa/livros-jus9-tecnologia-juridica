@@ -135,6 +135,13 @@ window.jus9DemoLogin = function(form){
       if(invalid && !firstInvalid) firstInvalid = el;
     });
     if(cpf && !validCpf(cpf.value)){ markInvalid(cpf, true); firstInvalid = firstInvalid || cpf; }
+    var percentual = form.querySelector('[data-percentual-amostra]');
+    if(percentual){
+      var pct = parseFloat(String(percentual.value || '').replace(',', '.'));
+      var invalidPct = isNaN(pct) || pct < 0 || pct > 100;
+      markInvalid(percentual, invalidPct);
+      if(invalidPct) firstInvalid = firstInvalid || percentual;
+    }
     var pdf = form.querySelector('[data-pdf]');
     var pdfInfo = 'PDF não anexado automaticamente pelo navegador. Anexar manualmente ao e-mail ou informar link privado.';
     if(pdf && pdf.files && pdf.files[0]){
@@ -170,6 +177,10 @@ window.jus9DemoLogin = function(form){
       'Subtítulo: ' + (data.get('subtitulo') || ''),
       'Categoria/gênero: ' + data.get('categoria'),
       'Já foi publicada?: ' + data.get('publicada'),
+      'Número aproximado de páginas: ' + (data.get('paginas') || ''),
+      'ISBN: ' + (data.get('isbn') || ''),
+      'Porcentagem autorizada para amostra gratuita pública: ' + data.get('percentualAmostra') + '%',
+      'Orientação sobre a amostra gratuita: ' + (data.get('orientacaoAmostra') || ''),
       'Link para análise: ' + (data.get('linkPdf') || ''),
       'Descrição: ' + data.get('descricao'),
       'PDF: ' + pdfInfo,
@@ -178,7 +189,8 @@ window.jus9DemoLogin = function(form){
       '- Declaro ser autor(a) da obra ou possuir autorização suficiente para disponibilizá-la gratuitamente.',
       '- Declaro que as informações prestadas são verdadeiras e estou ciente de que a falsidade de informações pode gerar responsabilidade civil e criminal.',
       '- Autorizo a Jus 9 Tecnologia Jurídica a avaliar a obra enviada.',
-      '- Em caso de aprovação, autorizo a disponibilização gratuita da obra no portal Livros Gratuitos.',
+      '- Autorizo que, em caso de aprovação, a porcentagem indicada seja usada como referência para uma amostra gratuita pública, preferencialmente formada por páginas reais e fiéis, com início, meio e fim.',
+      '- Em caso de aprovação, aceito tratar separadamente as condições de publicação da obra no portal Livros Gratuitos.',
       '- Estou ciente de que, se a obra for recusada, meus dados pessoais e o arquivo enviado poderão ser excluídos após a análise, conforme aviso inicial.'
     ];
     var subject = 'Envio de obra para avaliação — ' + data.get('titulo');
