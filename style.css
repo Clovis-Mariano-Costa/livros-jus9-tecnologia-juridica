@@ -1046,3 +1046,7 @@ html, body{max-width:100%; overflow-x:hidden}
 .side-card ol{color:var(--muted); padding-left:20px}
 .side-card li{margin:0 0 10px}
 @media(max-width:980px){.book-showcase,.two-col,.form-layout{grid-template-columns:1fr}.book-cover-card{max-width:360px}.technical-info dl div{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}}
+
+.compact-notice{margin:16px 0 18px; padding:18px; border-radius:18px;}
+.compact-notice h3{font-size:20px; margin-bottom:8px;}
+.compact-notice p{font-size:14px; line-height:1.55;}
