@@ -1,17 +1,9 @@
 # Livros Jus 9
 
-## Repertório
+Repertório: `livros-jus9-tecnologia-juridica`
 
-`livros-jus9-tecnologia-juridica`
+Status: existente
 
-## Status
+Mão na Massa Final — padrão visual, assinatura, governança e orientação obrigatória.
 
-existente
-
-## Fase
-
-Pré-Mão na Massa — Pacote Governança encerrado.
-
-## Finalidade
-
-Alinha o hub de livros à governança autoral da Jus 9, preservando autoria, links públicos e cautela com versões gratuitas não comercializáveis.
+© Jus 9 Tecnologia Jurídica — software livre, autoria preservada.
