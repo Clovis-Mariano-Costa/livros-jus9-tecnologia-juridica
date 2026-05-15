@@ -1,17 +1,17 @@
-# livros-jus9-tecnologia-juridica
+# Livros Jus 9
 
+## Repertório
 
----
+`livros-jus9-tecnologia-juridica`
 
-## Autoria, licença e DNA de referência
+## Status
 
-Este repositório integra o ecossistema da **Jus 9 Tecnologia Jurídica**.
+existente
 
-Software livre com autoria preservada: a licença de uso não remove a autoria,
-a origem, a assinatura institucional nem os direitos autorais da Jus 9 Tecnologia Jurídica.
+## Fase
 
-- Repositório: `livros-jus9-tecnologia-juridica`
-- Referência oficial: https://livros.jus9tecnologia.com.br/
-- E-mail de contato: clovis@jus9tecnologia.com.br
-- DNA de referência de Charlie Echo da Costa: `charlieecho-jus9-tecnologia-juridica`
+Pré-Mão na Massa — Pacote Governança encerrado.
 
+## Finalidade
+
+Alinha o hub de livros à governança autoral da Jus 9, preservando autoria, links públicos e cautela com versões gratuitas não comercializáveis.
