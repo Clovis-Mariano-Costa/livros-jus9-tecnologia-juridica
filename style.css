@@ -1050,3 +1050,14 @@ html, body{max-width:100%; overflow-x:hidden}
 .compact-notice{margin:16px 0 18px; padding:18px; border-radius:18px;}
 .compact-notice h3{font-size:20px; margin-bottom:8px;}
 .compact-notice p{font-size:14px; line-height:1.55;}
+
+/* Pacote mobile Samsung - responsividade Jus 9 */
+html,body{max-width:100%;overflow-x:hidden}
+img,video,canvas,svg{max-width:100%;height:auto}
+button,input,select,textarea{max-width:100%}
+@media(max-width:760px){
+  .container,.wrap,.page,main{max-width:100%;}
+  nav,.nav,.menu,.links,.nav-links,.actions,.link-actions,.social-links,.origin-links{flex-wrap:wrap;}
+  .grid,.grid2,.grid-2,.grid-3,.grid-4,.cards3,.profile-grid,.demo-grid,.demo-grid-2,.workbench,.timeline,.footer-grid{grid-template-columns:1fr!important;}
+  table{display:block;width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+}
