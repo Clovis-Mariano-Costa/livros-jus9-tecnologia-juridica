@@ -1,0 +1,54 @@
+﻿{
+    "name":  "Livros e Doutrina Jus 9",
+    "short_name":  "Livros Jus 9",
+    "description":  "Biblioteca aberta da Jus 9 com livros gratuitos, doutrina, analise editorial e obras de memoria.",
+    "lang":  "pt-BR",
+    "dir":  "ltr",
+    "id":  "/?source=pwa",
+    "start_url":  "/?source=pwa",
+    "scope":  "/",
+    "display":  "standalone",
+    "background_color":  "#fffaf3",
+    "theme_color":  "#d4a72c",
+    "categories":  [
+                       "business",
+                       "education",
+                       "productivity"
+                   ],
+    "icons":  [
+                  {
+                      "purpose":  "any maskable",
+                      "type":  "image/png",
+                      "sizes":  "any",
+                      "src":  "/assets/jus9-favicons/jus9-favicon-512.png"
+                  }
+              ],
+    "shortcuts":  [
+                      {
+                          "url":  "https://jus9tecnologia.com.br/",
+                          "description":  "Abrir site principal da Jus 9.",
+                          "name":  "Jus 9 Tecnologia Juridica",
+                          "icons":  [
+                                        {
+                                            "type":  "image/png",
+                                            "sizes":  "any",
+                                            "src":  "/assets/jus9-favicons/jus9-favicon-512.png"
+                                        }
+                                    ],
+                          "short_name":  "Jus 9"
+                      },
+                      {
+                          "url":  "https://charlieecho.jus9tecnologia.com.br/",
+                          "description":  "Abrir casa publica da Charlie Echo.",
+                          "name":  "Charlie Echo",
+                          "icons":  [
+                                        {
+                                            "type":  "image/png",
+                                            "sizes":  "any",
+                                            "src":  "/assets/jus9-favicons/jus9-favicon-512.png"
+                                        }
+                                    ],
+                          "short_name":  "Charlie"
+                      }
+                  ]
+}
